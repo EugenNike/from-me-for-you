@@ -13,19 +13,3 @@ def good_dreams(text, first_divisor, second_divisor, *args, **kwargs):
             pass
     for i in edit_sp:
         print(i)
-
-
-
-print(*good_dreams(
-    'And, who is this Pinocchio? - They say he\'s a bad, lazy, dangerous type. - Slander, pure slander!',
-    ' - ',
-    ', ',
-    ('not_before', 2),
-    ('up_low', 0),
-    ('title', 1),
-    ('abracodabra', 1),
-    up_low=lambda x: ''.join([x[i].lower() if i % 2 else
-    x[i].upper() for i in range(len(x))]),
-    not_before=lambda x: f'not {x}',
-    title=lambda x: x.title()
-    ), sep='\n')
