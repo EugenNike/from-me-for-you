@@ -23,7 +23,7 @@ class Snail:
             return False
 
     def __ge__(self, other):  # >=
-        if self.size > other.size:
+        if self.size >= other.size:
             return True
         else:
             return False
@@ -35,7 +35,7 @@ class Snail:
             return False
 
     def __le__(self, other):  # <=
-        if self.size < other.size:
+        if self.size <= other.size:
             return True
         else:
             return False
